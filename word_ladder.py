@@ -1,16 +1,16 @@
 import collections
 import copy
 
-class WordLadderSolve:             #class to generate the word ladder and solve the problem
+class WordLadderSolve:              #class to generate the word ladder and solve the problem
     def __init__(self, start):
-        self.ladder = [[start]]    #the word from which we are going to start the wordLadder
+        self.ladder = [[start]]     #the word from which we are going to start the wordLadder
 
-    def AddWord(self, word):       #We use this to append the possible adjacent words
+    def AddWord(self, word):        #We use this to append the possible adjacent words
         for item in self.ladder:
-            item.append(word)      #append the word to the item of the class
+            item.append(word)       #append the word to the item of the class
 
-    def LastWord(self):            #We use this because we need to secure that
-        return self.ladder[0][-1]  #the last word is the same is all lists in self.ladder
+    def LastWord(self):             #We use this because we need to secure that
+        return self.ladder[0][-1]   #the last word is the same is all lists in self.ladder
 
     def FinalLadder(self):          #This will return the final complete ladder
         return self.ladder
