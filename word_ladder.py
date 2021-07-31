@@ -12,7 +12,7 @@ class WordLadderSolve:           #class to generate the word ladder and solve th
     def LastWord(self):            #We use this because we need to secure that
         return self.ladder[0][-1]  #the last word is the same is all lists in self.ladder
 
-    def FinalLadder(self):         #This will return the final complete ladder
+    def FinalLadder(self):          #This will return the final complete ladder
         return self.ladder
 
     def MergeLadders(self, other):   #We use this to merge two ladders
